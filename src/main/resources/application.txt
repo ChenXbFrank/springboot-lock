@@ -1,0 +1,35 @@
+#配置数据源
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/sp?useUnicode=true&characterEncoding=utf8
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+#jpa
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+#单个Redis
+spring.redis.host=127.0.0.1
+spring.redis.port=6379
+
+#redis集群  模拟4个Redis集群节点
+#spring.redis.cluster.nodes=127.0.0.1:7001,127.0.0.1:7002,127.0.0.1:7003,127.0.0.1:7004
+
+
+#mybatis
+mybatis.mapper-locations=classpath:mapper/*Mapper.xml
+mybatis.type-aliases-package=com.zero.learn_spring_boot.model
+
+spring.thymeleaf.cache=false
+#缓冲的配置
+spring.thymeleaf.check-template= true
+spring.thymeleaf.check-template-location= true
+#开启MVC thymeleaf 视图解析
+spring.thymeleaf.enabled=true
+spring.thymeleaf.encoding=utf-8
+spring.thymeleaf.mode= HTML5
+spring.thymeleaf.prefix= classpath:/templates/
+spring.thymeleaf.suffix= .html
+
+
+
